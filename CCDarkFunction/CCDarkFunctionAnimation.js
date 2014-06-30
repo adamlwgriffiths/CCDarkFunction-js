@@ -29,7 +29,6 @@ cc.DarkFunctionAnimation = cc.Class.extend({
         var xmlParser = new cc.SAXParser();
 
         // load the anim file
-        //xmlDoc = loadXMLString(cc.loader.getRes(resource));
         xmlDoc = xmlParser.parse(cc.loader.getRes(resource));
         this.anim = new cc.DarkFunctionAnim(xmlDoc);
 
@@ -37,7 +36,6 @@ cc.DarkFunctionAnimation = cc.Class.extend({
         var base_path = resource.slice(0,resource.lastIndexOf('/')+1);
 
         var sprites_path = base_path + this.anim.spriteSheet;
-        //xmlDoc = loadXMLString(cc.loader.getRes(sprites_path));
         xmlDoc = xmlParser.parse(cc.loader.getRes(sprites_path));
         this.sprites = new cc.DarkFunctionSprites(xmlDoc);
 
