@@ -48,5 +48,5 @@ cc.DarkFunctionAnim = function(xmlDoc) {
         // add to anims
         this.anims[anim.name] = anim;
     }
-}
+};
 

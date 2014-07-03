@@ -32,4 +32,5 @@ cc.DarkFunctionSprites = function(xmlDoc) {
         var full_path = sprite.path + "/" + sprite.name;
         this.sprites[full_path] = sprite;
     }
-}
+};
+
