@@ -80,8 +80,8 @@ cc.DarkFunctionAnimation = cc.Class.extend({
             }
 
             // we need an overall animation speed
-            // 0.05 seems to mimic DarkFunction
-            var animation = cc.Animation.create(frames, 0.05);
+            // 0.0295 seems to mimic DarkFunction
+            var animation = cc.Animation.create(frames, 0.0295);
 
             // cache the animation
             cc.animationCache.addAnimation(animation, anim.name);
