@@ -72,6 +72,10 @@ cc.DarkFunctionAnimation = cc.Class.extend({
 
                     // create an animation
                     var animationFrame = cc.AnimationFrame.create(spriteFrame, cell.delay, null);
+
+                    // store the frame name
+                    animationFrame.setUserInfo({name:spr.name});
+
                     frames.push(animationFrame);
 
                     // only get the first sprite
