@@ -5,7 +5,7 @@ cc._dfeLoader = {
     load:function(realUrl, url, res, cb) {
         cc.loader.loadTxt(realUrl, cb);
     }
-}
+};
 cc.loader.register(["sprites", "anim"], cc._dfeLoader);
 
 cc.DarkFunctionAnimation = cc.Class.extend({
